@@ -20,3 +20,11 @@ Imagine you have a very long form layout and you use Butterknife. This plugin is
 It creates all the injections for you. I just had a great moment with it. It even gives option for OnClick. :tada
 
 
+### Debug Your App Over Wi-Fi
+
+1. Open terminal
+2. Connect your device with usb cable, run ```adb devices``` to check if it is connected.
+3. run ```adb tcpip 5555```
+4. Disconnect your usb cable
+5. Go to your device settings >> about phone >> network >> get ip address
+6. run ```adb connect ip-address-inserted-here```
